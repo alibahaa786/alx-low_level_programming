@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /*
- * main - print ksadjfaksdf to standard error
- * rutrn 1
+ * main - print ksadjfaksdf 
+ * to standard error
+ * return 1
  *
 */
 
