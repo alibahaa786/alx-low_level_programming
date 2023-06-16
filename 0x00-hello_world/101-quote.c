@@ -3,7 +3,7 @@
 /*
  * main - print ksadjfaksdf
  * to standard error
- * return 1
+ * Return: 0 if exited properly, otherwise non-zero 
  *
 */
 
