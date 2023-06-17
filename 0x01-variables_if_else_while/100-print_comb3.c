@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+/**
+ * main - print double digits combination
+ * Return: 0 if executed properly
+ * otherwise non-zero
+*/
+
+int main(void)
+{
+	int i;
+	int j;
+
+	for (i = 0; i <= 8; i++)
+	{
+		for (j = i + 1; j <= 9; j++)
+		{
+			if (i != 8)
+			{
+				putchar('0' + i);
+				putchar('0' + j);
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
+}
