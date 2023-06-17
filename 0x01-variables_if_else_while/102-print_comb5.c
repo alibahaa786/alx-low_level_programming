@@ -28,9 +28,9 @@ int main(void)
 				k = i;
 				l = j + 1;
 			}
-			for (k; k <= 9; k++)
+			for (; k <= 9; k++)
 			{
-				for (l; l <= 9; l++)
+				for (; l <= 9; l++)
 				{
 					putchar('0' + i);
 					putchar('0' + j);
