@@ -8,7 +8,9 @@
 
 int _islalpha(int c)
 {
-	if (65 <= c < 91 || 97 <= c <= 122)
+	if (65 <= c && c < 91)
+		return (1);
+	else if (97 <= c && c <= 122)
 		return (1);
 	else
 		return (0);
