@@ -13,7 +13,7 @@ void printstr(void)
 	int strsize;
 
 	strsize = strlen(str);
-	for (i = 0; i <= strsize; i++)
+	for (i = 0; i < strsize; i++)
 	{
 		putchar(str[i]);
 	}
