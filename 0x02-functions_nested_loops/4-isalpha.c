@@ -6,7 +6,7 @@
  * Return: 0 if false
 */
 
-int _islalpha(int c)
+int _isalpha(int c)
 {
 	if (65 <= c && c < 91)
 		return (1);
