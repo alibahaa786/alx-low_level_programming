@@ -15,7 +15,7 @@ void print_to_98(int n)
 	{
 		if (n <= 9)
 		{
-			_putchar(n);
+			_putchar('0' + n);
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -23,8 +23,8 @@ void print_to_98(int n)
 		{
 			unit = n % 10;
 			tens = n / 10;
-			_putchar(tens);
-			_putchar(unit);
+			_putchar('0' + tens);
+			_putchar('0' + unit);
 			_putchar(',');
 			_putchar(' ');
 		}
