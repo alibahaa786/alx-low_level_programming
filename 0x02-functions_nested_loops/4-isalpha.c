@@ -1,16 +1,17 @@
 #include "main.h"
 
 /**
- * _isalpha - check if alphabet
+ * _isalpha - check if c is alphabet
+ * @c: input
  * Return: 1 if true
- * Return: 0 if false
+ * ptherwise 0
 */
 
 int _isalpha(int c)
 {
-	if (65 <= c && c < 91)
+	if (c >= 65 && c < 91)
 		return (1);
-	else if (97 <= c && c <= 122)
+	else if (c >= 97 && c <= 122)
 		return (1);
 	else
 		return (0);
