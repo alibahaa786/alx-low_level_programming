@@ -1,17 +1,3 @@
-#include <stdio.h>
-#include "main.h"
-
-/**
- * main - print lowercase alphabet
- * Return: 0 if executed properly
-*/
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 /**
  * print_alphabet - print alphabet
  * Return: null
