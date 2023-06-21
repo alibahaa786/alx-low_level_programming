@@ -81,6 +81,8 @@ void print_to_98(int n)
                                 _putchar(',');
                                 _putchar(' ');
                         }
+			if (negative == 1)
+				n *= -1;
 		}
 	}	
 	_putchar('\n');
