@@ -23,4 +23,5 @@ int main(void)
 		printf(", %ld", current);
 	}
 	putchar('\n');
+	return (0);
 }
