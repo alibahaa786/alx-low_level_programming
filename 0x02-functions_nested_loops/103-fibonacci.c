@@ -10,7 +10,7 @@ int main(void)
 	long previous;
 	long current;
 	long temp;
-	long long sum;
+	long sum;
 
 	previous = 1;
 	current = 2;
@@ -23,7 +23,7 @@ int main(void)
 		current += previous;
 		previous = temp;
 	}
-	printf("%lld", sum);
+	printf("%ld", sum);
 	putchar('\n');
 	return (0);
 }
