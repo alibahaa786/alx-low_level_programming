@@ -15,51 +15,20 @@ void print_to_98(int n)
 	{
 		for (; n <= 98; n++)
 		{
-			int negative = 0;
-
-                        if (n < 0)
-                        {
-                                negative = 1;
-                                n *= -1;
-                                _putchar('-');
-                        }
-			if (n / 10 == 0)
-			{
-				_putchar('0' + n);
-			}
-			else
-			{
-				unit = n % 10;
-				tens = n / 10;
-				if (tens > 9)
-					_putchar('0' + tens / 10);
-				_putchar('0' + tens % 10);
-				_putchar('0' + unit);
-			}
 			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			if (negative == 1)
-				n *= -1;
+				printf("%d, ", n);
+			else
+				printf("%d", n);
 		}
 	}
 	else if (n > 98)
 	{
 		for (; n >= 98; n--)
 		{
-			unit = n % 10;
-			tens = n / 10;
-			if (tens > 9)
-				_putchar('0' + tens / 10);
-			_putchar('0' + tens % 10);
-			_putchar('0' + unit);
 			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				printf("%d, ", n);
+			else
+				printf("%d", n);
 		}
 	}	
 	_putchar('\n');
