@@ -23,7 +23,7 @@ void print_to_98(int n)
                                 n *= -1;
                                 _putchar('-');
                         }
-			if (n / 10 = 0)
+			if (n / 10 == 0)
 			{
 				_putchar('0' + n);
 			}
