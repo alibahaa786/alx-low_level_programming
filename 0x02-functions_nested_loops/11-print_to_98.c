@@ -76,7 +76,7 @@ void print_to_98(int n)
                                 _putchar('0' + tens);
                                 _putchar('0' + unit);
                         }
-                        if (n != 98 && negative != 0)
+                        if (n != 98 && negative != 1)
                         {
                                 _putchar(',');
                                 _putchar(' ');
