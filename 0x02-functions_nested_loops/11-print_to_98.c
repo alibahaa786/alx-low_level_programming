@@ -10,25 +10,67 @@ void print_to_98(int n)
 {
 	int unit;
 	int tens;
-
-	for (; n <= 98; n++)
+	if (n <=98 && n >= 0)
 	{
-		if (n <= 9)
+		for (; n <= 98; n++)
 		{
-			_putchar('0' + n);
-		}
-		else
-		{
-			unit = n % 10;
-			tens = n / 10;
-			_putchar('0' + tens);
-			_putchar('0' + unit);
-		}
-		if (n != 98)
-		{
-			_putchar(',');
-			_putchar(' ');
+			if (n <= 9)
+			{
+				_putchar('0' + n);
+			}
+			else
+			{
+				unit = n % 10;
+				tens = n / 10;
+				_putchar('0' + tens);
+				_putchar('0' + unit);
+			}
+			if (n != 98)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
+	else if (n > 98)
+	{
+		for (; n >= 98; n--)
+		{
+			unit = n % 10;
+                        tens = n / 10;
+                        _putchar('0' + tens);
+                        _putchar('0' + unit);
+                        
+                        if (n != 98)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
+		}
+	}
+	else
+	{
+		for (; n <= 98; n++)
+		{
+			n *= -1;
+			_putchar('-');
+			if (n <= 9)
+                        {
+                                _putchar('0' + n);
+                        }
+                        else
+                        {
+                                unit = n % 10;
+                                tens = n / 10;
+                                _putchar('0' + tens);
+                                _putchar('0' + unit);
+                        }
+			n *= -1;
+                        if (n != 98)
+                        {
+                                _putchar(',');
+                                _putchar(' ');
+                        }
+			
 	_putchar('\n');
 }
