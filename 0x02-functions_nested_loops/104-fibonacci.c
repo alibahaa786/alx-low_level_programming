@@ -11,9 +11,7 @@ int main(void)
 	unsigned long current;
 	int i;
 	unsigned long temp;
-	unsigned long current;
 	unsigned long current_1;
-	int c_power;
 	previous = 1;
 	current = 2;
 	printf("%lu, %lu", previous, current);
@@ -31,8 +29,6 @@ int main(void)
 		temp = current;
 		current = ((current * 1000) + (previous * 1000))/1000;
 		previous = temp;
-		power = 1;
-		c_power = i;
 		current_1 = current * 1000 % 1000;
 		printf(", %lu%lu", current, current_1);
 	}
