@@ -7,6 +7,8 @@
  */
 int main(void)
 {
+	int i;
+
     print_number(98);
     _putchar('\n');
     print_number(402);
@@ -19,5 +21,11 @@ int main(void)
     _putchar('\n');
     print_number(-0000);
     _putchar('\n');
+    
+    for (i = -1; i > -1000000000; i *= 10)
+    {
+	   print_number(i);
+	  _putchar('\n');
+    } 
     return (0);
 }
