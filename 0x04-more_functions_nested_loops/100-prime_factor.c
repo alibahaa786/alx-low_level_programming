@@ -13,7 +13,7 @@ int main(void)
 
 	while (i != 1)
 	{
-		if (i / div == 0)
+		if (i % div == 0)
 		{
 			i /= div;
 			max = div;
@@ -23,6 +23,6 @@ int main(void)
 			div += 1;
 		}
 	}
-	printf("%d", max);
+	printf("%d\n", max);
 	return (0);
 }
