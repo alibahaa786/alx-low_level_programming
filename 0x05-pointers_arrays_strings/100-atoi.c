@@ -9,20 +9,17 @@
 int _atoi(char *s)
 {
 	int len;
-	int neg_pos;
+	int neg = 0;
 	int tens = 1;
 	int num_len = 0;
 	int number = 0;
 	int i;
 	int digit;
 
-	neg_pos = 0;
 	for (len = 0; s[len] != '\0'; len++)
 	{
 		if (s[len] == '-')
-			neg_pos--;
-		else if (s[len] == '+')
-			neg_pos++;
+			neg++;
 		if (s[len] >= '0' && s[len] <= '9')
 		{
 			tens *= 10;
@@ -36,7 +33,7 @@ int _atoi(char *s)
 		number += digit * tens;
 		tens /= 10;
 	}
-	if (neg_pos < 0)
+	if (neg % 2 != 0)
 		number *= -1;
 	return (number);
 }
