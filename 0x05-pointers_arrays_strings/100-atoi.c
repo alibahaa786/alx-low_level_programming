@@ -14,6 +14,7 @@ int _atoi(char *s)
 	int num_len = 0;
 	int number = 0;
 	int i;
+	int digit;
 
 	neg_pos = 0;
 	for (len = 0; s[len] != '\0'; len++)
@@ -31,7 +32,8 @@ int _atoi(char *s)
 	tens /= 10;
 	for (i = len - num_len; i < len; i++)
 	{
-		number += (s[len] - 48) * tens;
+		digit = s[i] - 48;
+		number += digit * tens;
 		tens /= 10;
 	}
 	if (neg_pos < 0)
