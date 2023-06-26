@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts_hlaf - print last half
+ * puts_half - print last half
  * @str: pointer
  * Return: null
 */
