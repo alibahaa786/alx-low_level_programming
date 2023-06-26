@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - kjsdnf
- * @*n: pointer
+ * @n: pointer
  * Return: Null
 */
 
