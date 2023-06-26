@@ -22,7 +22,7 @@ int _atoi(char *s)
 			neg_pos--;
 		else if (s[len] == '+')
 			neg_pos++;
-		if (s[len] >= '0' and s[len] <= '9')
+		if (s[len] >= '0' && s[len] <= '9')
 		{
 			tens *= 10;
 			num_len++;
