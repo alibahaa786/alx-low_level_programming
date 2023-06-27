@@ -25,6 +25,11 @@ int _atoi(char *s)
 			tens *= 10;
 			num_len++;
 		}
+		else
+		{
+			if (num_len > 0)
+				break;
+		}
 	}
 	tens /= 10;
 	for (i = len - num_len; i < len; i++)
