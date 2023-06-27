@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int neg = 0;
 	int tens = 1;
 	int num_len = 0;
-	int number = 0;
+	unsigned int number = 0;
 	int i;
 	int digit;
 
@@ -34,6 +34,6 @@ int _atoi(char *s)
 		tens /= 10;
 	}
 	if (neg % 2 != 0)
-		number *= -1;
+		return (number * -1);
 	return (number);
 }
