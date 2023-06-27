@@ -12,7 +12,7 @@ int _atoi(char *s)
 	int neg = 0;
 	unsigned int tens = 1;
 	int num_len = 0;
-	int number = 0;
+	unsigned int number = 0;
 	int i;
 	int digit;
 
