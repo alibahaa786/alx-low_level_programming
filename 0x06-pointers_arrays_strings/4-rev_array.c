@@ -7,17 +7,21 @@
  * Return: Null
 */
 
-void reverse_array(int *a, int n)
-{
+void reverse_array(int *a, int n) {
 	int i;
 	char current;
-	int len;
-	
-	for (len = 1; a[len] != '\0'; len++)
+	int len = 1;
+
+	while (a[len] != '\0')
 	{
+		len++;
 	}
+
 	if (n > len)
+	{
 		n = len - 1;
+	}
+
 	for (i = 0; i < n / 2; i++)
 	{
 		current = a[i];
