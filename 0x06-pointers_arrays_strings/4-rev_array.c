@@ -22,7 +22,7 @@ void reverse_array(int *a, int n) {
 		n = len - 1;
 	}
 
-	for (i = 0; i < n / 2; i++)
+	for (i = n - 1; i >= n / 2; i--)
 	{
 		current = a[i];
 		a[i] = a[n - 1 - i];
