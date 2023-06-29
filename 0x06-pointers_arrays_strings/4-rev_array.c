@@ -10,8 +10,12 @@
 void reverse_array(int *a, int n)
 {
 	int i;
-	int n_lmt;
+	char current;
 
 	for (i = 0; i < n / 2; i++)
+	{
+		current = a[i];
 		a[i] = a[n - 1 - i];
+		a[n - 1 - i] = current;
+	}
 }
