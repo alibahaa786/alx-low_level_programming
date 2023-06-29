@@ -4,6 +4,7 @@
  * _strncat - sdjkfanf
  * @dest: pointer
  * @src: pointer
+ * @n: input
  * Return: null
 */
 
