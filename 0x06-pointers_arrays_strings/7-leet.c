@@ -8,7 +8,7 @@
 
 char *leet(char *str)
 {
-	char str2[] = {'0' , 'L', '!', 'E', 'A', '!', '!', 'T'};
+	char str2[] = {'0' , 'L', '	', 'E', 'A', '	', '	', 'T'};
 	int i;
 	int j;
 
