@@ -18,7 +18,6 @@ void print_number(int n)
 	for (i = 1; n / i > 9; i *= 10)
 	{
 	}
-	i /= 10;
 	for (; i != 1; i /= 10)
 	{
 		_putchar('0' + n / i);
