@@ -2,7 +2,7 @@
 
 /**
  * _strspn - function
- * @c: pointer
+ * @s: pointer
  * @accept: pointer
  * Return: int
 */
