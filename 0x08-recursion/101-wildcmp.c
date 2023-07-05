@@ -17,7 +17,7 @@ int _compare(char *s1, char *s2, int i1, int i2, int star_present)
 	if (s2[i2] == '*')
 	{
 		star_present = 1;
-		return (_compare(s1, s2, i1, i2 + 1));
+		return (_compare(s1, s2, i1, i2 + 1, star_present));
 	}
 	if (!star_present)
 	{
@@ -25,12 +25,9 @@ int _compare(char *s1, char *s2, int i1, int i2, int star_present)
 			return (_compare(s1, s2, i1 + 1, i2, 0));
 		return (0);
 	}
-	if (star_present)
-	{
-		if (s1[i1] == s2[i2])
-			return (_compare(s1, s2, i1 + 1, i2 + 2, 1));
-		return (_compare(s1, s2, i1 + 1, i2, 1));
-	}
+	if (star_present && s1[i1] == s2[i2])
+		return (_compare(s1, s2, i1 + 1, i2 + 1, 1));
+	return (_compare(s1, s2, i1 + 1, i2, 1));
 }
 
 /**
