@@ -7,7 +7,7 @@
  * Return: len
 */
 
-int _str_len (char *s, int len)
+int _str_len(char *s, int len)
 {
 	if (s[len])
 		return (_str_len(s, len + 1));
@@ -22,7 +22,7 @@ int _str_len (char *s, int len)
  * Return: 0 or 1
 */
 
-int helper_palindrome (char *s, int len, int i)
+int helper_palindrome(char *s, int len, int i)
 {
 	if (i == len / 2)
 		return (1);
