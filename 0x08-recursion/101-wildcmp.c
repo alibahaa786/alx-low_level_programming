@@ -12,6 +12,10 @@
 
 int _compare(char *s1, char *s2, int i1, int i2, int star_present)
 {
+	if (!s1[i1] && s2[i2])
+		return (0);
+	if (s1[i1] && !s2[i2])
+		return (0);
 	if (!s1[i1] && !s2[i2])
 		return (1);
 	if (s2[i2] == '*')
