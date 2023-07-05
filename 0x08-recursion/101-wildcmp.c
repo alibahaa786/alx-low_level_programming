@@ -6,14 +6,6 @@
  * @i: integer
  * Return: 1 or 0
 */
-int check_s2(char *s2, int i)
-{
-        if (s2[i] == '*')
-                return (check_s2(s2, i + 1));
-        if (!s2[i])
-                return (1);
-        return (0);
-}
 
 /**
  * _compare - function
@@ -56,8 +48,6 @@ int _compare(char *s1, char *s2, int i1, int i2, int star_present)
 */
 int wildcmp(char *s1, char *s2)
 {
-        if (check_s2(s2, 0))
-                return (1);
         return (_compare(s1, s2, 0, 0, 0));
 }
 
