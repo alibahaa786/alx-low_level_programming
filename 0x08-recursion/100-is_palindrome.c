@@ -9,7 +9,7 @@
 
 int helper_palindrome (char *s, int len, int i)
 {
-	if (i = len / 2)
+	if (i == len / 2)
 		return (1);
 	if (s[i] == s[len - 1 - i])
 		return (helper_palindrome(s, len, i + 1));
