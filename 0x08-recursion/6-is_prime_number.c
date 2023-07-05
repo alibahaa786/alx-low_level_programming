@@ -2,8 +2,8 @@
 
 /**
  * if_div - function
- * n: number
- * div: int
+ * @n: number
+ * @div: int
  * Return: 1 or 0
 */
 
