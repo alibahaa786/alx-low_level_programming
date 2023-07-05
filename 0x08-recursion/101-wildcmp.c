@@ -1,13 +1,6 @@
 #include "main.h"
 
 /**
- * check_s2 - function
- * @s2: string
- * @i: integer
- * Return: 1 or 0
-*/
-
-/**
  * _compare - function
  * @s1: string
  * @s2: string
