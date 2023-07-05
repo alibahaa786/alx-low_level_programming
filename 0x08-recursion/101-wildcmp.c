@@ -6,17 +6,14 @@
  * @i: integer
  * Return: 1 or 0
 */
-
-/*
 int check_s2(char *s2, int i)
 {
-	if (s2[i] == '*')
-		return (check_s2(s2, i + 1));
-	if (!s2[i])
-		return (1);
-	return (0);
+        if (s2[i] == '*')
+                return (check_s2(s2, i + 1));
+        if (!s2[i])
+                return (1);
+        return (0);
 }
-*/
 
 /**
  * _compare - function
@@ -27,29 +24,28 @@ int check_s2(char *s2, int i)
  * @star_present: boolean
  * Return: 0 or 1
 */
-
 int _compare(char *s1, char *s2, int i1, int i2, int star_present)
 {
-	if (!s1[i1] && s2[i2])
-		return (0);
-	if (s1[i1] && !s2[i2])
-		return (0);
-	if (!s1[i1] && !s2[i2])
-		return (1);
-	if (s2[i2] == '*')
-	{
-		star_present = 1;
-		return (_compare(s1, s2, i1, i2 + 1, star_present));
-	}
-	if (!star_present)
-	{
-		if (s1[i1] == s2[i1])
-			return (_compare(s1, s2, i1 + 1, i2, 0));
-		return (0);
-	}
-	if (star_present && s1[i1] == s2[i2])
-		return (_compare(s1, s2, i1 + 1, i2 + 1, 1));
-	return (_compare(s1, s2, i1 + 1, i2, 1));
+        if (!s1[i1] && s2[i2])
+                return (0);
+        if (s1[i1] && !s2[i2])
+                return (0);
+        if (!s1[i1] && !s2[i2])
+                return (1);
+        if (s2[i2] == '*')
+        {
+                star_present = 1;
+                return (_compare(s1, s2, i1, i2 + 1, star_present));
+        }
+        if (!star_present)
+        {
+                if (s1[i1] == s2[i1])
+                        return (_compare(s1, s2, i1 + 1, i2, 0));
+                return (0);
+        }
+        if (star_present && s1[i1] == s2[i2])
+                return (_compare(s1, s2, i1 + 1, i2 + 1, 1));
+        return (_compare(s1, s2, i1 + 1, i2, 1));
 }
 
 /**
@@ -58,10 +54,10 @@ int _compare(char *s1, char *s2, int i1, int i2, int star_present)
  * @s2: string
  * Return: 1 or 0
 */
-
 int wildcmp(char *s1, char *s2)
 {
-	/*if (check_s2(s2, 0))
-		return (1);*/
-	return (_compare(s1, s2, 0, 0, 0));
+        if (check_s2(s2, 0))
+                return (1);
+        return (_compare(s1, s2, 0, 0, 0));
 }
+
