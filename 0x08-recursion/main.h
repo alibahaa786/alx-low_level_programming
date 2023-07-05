@@ -11,4 +11,4 @@ int is_palindrome(char *s);
 int helper_palindrome (char *s, int len, int i);
 int wildcmp(char *s1, char *s2);
 int _compare(char *s1, char *s2, int i1, int i2, int star_present);
-int check_s2(char *s2, int i)
+int check_s2(char *s2, int i);
