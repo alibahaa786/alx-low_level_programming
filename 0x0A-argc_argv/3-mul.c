@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int result;
 
+	(void)argc;
 	if (!argv[1] || !argv[2])
 	{
 		printf("Error");
