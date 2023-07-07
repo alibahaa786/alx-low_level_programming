@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+/**
+ * main - function
+ * @argc: integer
+ * @argv: array
+ * Return: 0
+*/
+
+int main(int argc, char *argv[])
+{
+	(void)*argv;
+	printf("%d\n", argc);
+	return (0);
+}
