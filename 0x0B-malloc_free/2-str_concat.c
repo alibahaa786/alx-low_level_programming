@@ -18,10 +18,6 @@ char *str_concat(char *s1, char *s2)
 
 	size1 = strlen(s1);
 	size2 = strlen(s2);
-	if (!size1)
-		return (s2);
-	if (!size2)
-		return (s1);
 	final = malloc(sizeof(char) * (size1 + size2) + 1);
 	if (!final)
 		return ('\0');
