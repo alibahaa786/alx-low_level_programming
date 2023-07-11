@@ -4,7 +4,7 @@
 /**
  * create_array - function
  * @size: integer
- * c: char
+ * @c: char
  * Return: null
 */
 
