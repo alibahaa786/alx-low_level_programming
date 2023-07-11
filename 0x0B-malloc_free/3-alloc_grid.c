@@ -11,7 +11,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	char **grid;
+	int **grid;
 	int i;
 	int j;
 
@@ -25,7 +25,7 @@ int **alloc_grid(int width, int height)
 	{
 		for (j = 0; j < width; j++)
 		{
-			*grid[i][j] = "0";
+			*grid[i][j] = 0;
 		}
 	}
 	return (*grid);
