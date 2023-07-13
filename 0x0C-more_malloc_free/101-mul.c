@@ -2,7 +2,9 @@
 #include <stdio.h>
 
 /**
- * mul - function
+ * main - function
+ * @argc: integer
+ * @argv: array
  * Return: 0
 */
 
