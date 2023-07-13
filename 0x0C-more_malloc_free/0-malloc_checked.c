@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc-checked - function
+ * malloc_checked - function
  * @b: integer
  * Return: 0 or 98
 */
