@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Erro 98r\n");
+		printf("Error\n");
 		exit(98);
 	}
 	num1 = atoi(argv[1]);
@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	if (!get_op_func(op))
 	{
-		printf("Error 99\n");
+		printf("Error\n");
 		exit(99);
 	}
 	if ((*op == 37 || *op == 47) && num2 == 0)
 	{
-		printf("Error 100\n");
+		printf("Error\n");
 		exit(100);
 	}
 	printf("%d\n",get_op_func(op)(num1, num2));
