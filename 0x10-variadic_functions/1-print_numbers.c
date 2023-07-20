@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+/**
+ * print_numbers - main
+ * @separator: array
+ * @n: int
+ * Return: Null
+*/
+
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list numbers;
