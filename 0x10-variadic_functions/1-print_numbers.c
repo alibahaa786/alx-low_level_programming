@@ -4,20 +4,17 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list nums;
-	unsigned int index;
+	va_list numbers;
+	unsigned int i;
 
-	va_start(nums, n);
-
-	for (index = 0; index < n; index++)
+	va_start(numbers, n);
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", va_arg(nums, int));
+		printf("%d", va_arg(numbers, int));
 
-		if (index != (n - 1) && separator != NULL)
+		if (index != (n - 1) && separator)
 			printf("%s", separator);
 	}
-
 	printf("\n");
-
 	va_end(nums);
 }
