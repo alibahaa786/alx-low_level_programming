@@ -8,7 +8,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list numbers;
 
 	if (!n)
-		return;
+		printf("\n");
 	va_start(numbers, n);
 	for (i = 0; i < n - 1; i++)
 	{
