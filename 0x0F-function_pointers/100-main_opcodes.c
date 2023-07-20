@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 		printf("%.2x", opcode);
 		if (i != bytes - 1)
 			printf(" ");
+		func++;
 	}
 	printf("\n");
 	return (0);
