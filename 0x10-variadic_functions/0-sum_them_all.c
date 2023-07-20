@@ -5,8 +5,8 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list numbers;
-	int i;
-	unsigned int sum;
+	unsigned int i;
+	unsigned int sum = 0;
 
 	if (!n)
 		return (0);
