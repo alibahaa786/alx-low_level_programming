@@ -4,7 +4,7 @@
 /**
  * struct op - struct
  * @op: operator
- * @f - callback function
+ * @f: callback function
 */
 
 typedef struct op
