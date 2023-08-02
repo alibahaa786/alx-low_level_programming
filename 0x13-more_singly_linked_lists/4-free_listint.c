@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+/**
+ * free_listint - function
+ * @head: pointer
+*/
+
 void free_listint(listint_t *head)
 {
 	listint_t *temp;

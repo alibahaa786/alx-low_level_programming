@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+/**
+ * add_nodeint_end - function
+ * @head: pointer
+ * @n: int
+ * Return: num
+*/
+
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new, *last;
