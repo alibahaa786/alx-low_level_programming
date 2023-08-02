@@ -1,6 +1,14 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * insert_nodeint_at_index - function
+ * @head: pointer
+ * @idx: int
+ * @n: int
+ * Return: pointer
+*/
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *new, *temp = *head;
