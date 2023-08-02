@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * add_noteint - function
+ * add_nodeint - function
  * @head: pointer
  * @n: num
  * Return: num
