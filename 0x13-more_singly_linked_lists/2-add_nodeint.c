@@ -2,6 +2,13 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+/**
+ * add_noteint - function
+ * @head: pointer
+ * @n: num
+ * Return: num
+*/
+
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
