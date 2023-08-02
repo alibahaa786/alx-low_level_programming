@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * pop_listint - function
@@ -18,7 +19,7 @@ int pop_listint(listint_t **head)
 	sum = (*head)->n;
 	*head = (*head)->next;
 
-	free(tmp);
+	free(temp);
 
 	return (sum);
-};
+}
