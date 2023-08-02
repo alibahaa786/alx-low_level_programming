@@ -1,10 +1,24 @@
 #include "lists.h"
 
+/**
+ * pop_listint - function
+ * @head: pointer
+ * Return: n
+*/
+
 int pop_listint(listint_t **head)
 {
-	int n;
+	listint_t *temp;
+	int sum;
 
-	if (!head)
+	if (*head == NULL)
 		return (0);
-	n = head->n;
-	*head = head->next;
+
+	temp = *head;
+	sum = (*head)->n;
+	*head = (*head)->next;
+
+	free(tmp);
+
+	return (sum);
+};
