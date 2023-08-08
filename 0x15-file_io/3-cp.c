@@ -47,7 +47,7 @@ void close_file(int fd)
  * main - function
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
- * Return: 0 
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
